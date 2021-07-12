@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+    * {
+      box-sizing: border-box;
+  }
+  
+    html {
+      height: 100%;
+  }
+  
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #fff;
+      height: 100%;
+      margin: 0;
+  }
+  
+    span {
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    bottom: 70px;
+  }
+
+  .bg-chat{
+    background-color: rgb(0, 183, 255);
+    border: 4px solid rgb(79, 153, 196);
+    border-radius: 10px;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+  }
+
+  .robot{
+      width: 60px;
+      height: 60px;
+  }
+  
+  .chat {
+      height: 400px;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } 
+   
+    input { 
+      padding: 15px; 
+      margin-left: auto;
+      border-radius: 10px; 
+      border: 4px solid rgb(79, 153, 196);
+      width: 100%;
+  }
+
+  input:focus{
+    border: 4px solid rgb(79, 153, 196);
+      color: black;
+  }
+  
+  .messages {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 90%;
+      width: 100%;
+      background-color: white;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 10px;
+      border: 4px solid rgb(79, 153, 196);
+  }
+  
+  #bot {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+  }
+
+  #user{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+  }
+  
+  .bot {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+  }
+
+  .bot span{
+    border-radius: 10px 10px 10px 0;
+    margin-left: 4px;
+  }
+  
+  .avatar {
+      height: 25px;
+  }
+
+  span{
+      background-color: rgb(3, 144, 226);
+      color: #fff;
+  }
+  
+  img{
+      border-radius: 50%;
+  }
+
+  .response {
+      display: flex;
+      align-items: center;
+      height: 25px;
+  }
+
+  #user span{
+    border-radius: 10px 10px 0px 10px;
+    margin-right: 4px;
+  }
+  
+  
+  /* Mobile */
+  
+  @media only screen and (max-width: 980px) {
+    .container {
+          flex-direction: column; 
+          justify-content: flex-start;
+      }
+      .chat {
+          width: 75vw;
+          margin: 10vw;
+      }
+  }
